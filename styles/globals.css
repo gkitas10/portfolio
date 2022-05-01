@@ -4,6 +4,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  --basicfontcolor:#2A2C32;
+  --basicbtncolor:#2a2c32;
+  --detailscolor:#7390F9;
+  --contentfontfamily:'Fraunces', sans-serif;
+  --titlesfontfamily:'Mulish', sans-serif;
 }
 
 a {
@@ -11,6 +17,12 @@ a {
   text-decoration: none;
 }
 
+h1, h2 {
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
 }
+
+

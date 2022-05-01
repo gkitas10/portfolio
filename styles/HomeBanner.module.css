@@ -1,0 +1,53 @@
+.homebanner {
+    display: flex;
+}
+
+.homebanner__info {
+    width: 50%;
+}
+
+.homebanner__info-cont {
+    display: flex;
+    flex-direction: column;
+    color:var(--basicfontcolor);
+    font-family: var(--contentfontfamily);
+    align-items: flex-start;
+}
+
+.homebanner__greeting-cont {
+    display: flex;
+}
+
+.homebanner__greeting {
+    font-size: 2.5rem;
+}
+
+.homebanner__emojy {
+    width: 1em;
+}
+
+.homebanner__name {
+    font-size: 5rem;
+}
+
+.homebanner__occupation {
+    font-size: 5rem;
+}
+
+.homebanner__email {
+    font-family: var(--titlesfontfamily);
+    font-size: 1.9rem;
+    color: var(--detailscolor);
+}
+
+.homebanner__anchor {
+    background-color: var(--basicbtncolor);
+    color: white;
+    padding: 1em 2em;
+}
+
+.homebanner__img-cont {
+    display: flex;
+    width: 50%;
+    
+}
