@@ -1,5 +1,6 @@
 .homebanner {
     display: flex;
+    padding: 0 2em;
 }
 
 .homebanner__info {
@@ -49,5 +50,4 @@
 .homebanner__img-cont {
     display: flex;
     width: 50%;
-    
 }

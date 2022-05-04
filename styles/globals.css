@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  color: red;
 
   --basicfontcolor:#2A2C32;
   --basicbtncolor:#2a2c32;
@@ -23,6 +24,10 @@ h1, h2 {
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
 }
 
 

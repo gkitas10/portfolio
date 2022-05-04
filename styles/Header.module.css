@@ -1,0 +1,15 @@
+.header {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2em;
+}
+
+.header__anchor {
+    font-family: var(--titlesfontfamily);
+    font-weight: 500;
+    font-size: 1.22rem;
+    margin-left: 2em;
+    letter-spacing: 0.025em;
+}

@@ -4,10 +4,10 @@ import styles from '../styles/HomeBanner.module.css'
 const HomeBanner = () => {
     return ( 
         <div className={styles.homebanner}>
-            <div>
+            <div className={styles['homebanner__info']}>
                 <div className={styles['homebanner__info-cont']}>
                     <div className={styles['homebanner__greeting-cont']}>
-                        <h2 className={styles.homebanner__greeting}>Hola</h2>
+                        <h2 className={styles.homebanner__greeting}>Hola!</h2>
                         <span className={styles.homebanner__emojy} role="img" aria-label="hand pointing down">👇</span>
                     </div>
                     <h1 className={styles.homebanner__name}>Mi nombre es Jorge G. Cantón</h1>
