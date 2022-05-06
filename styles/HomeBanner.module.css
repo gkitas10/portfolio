@@ -3,11 +3,11 @@
     padding: 0 2em;
 }
 
-.homebanner__info {
+.info {
     width: 50%;
 }
 
-.homebanner__info-cont {
+.info-cont {
     display: flex;
     flex-direction: column;
     color:var(--basicfontcolor);
@@ -15,7 +15,7 @@
     align-items: flex-start;
 }
 
-.homebanner__greeting-cont {
+.greeting-cont {
     display: flex;
 }
 
@@ -23,36 +23,36 @@
     font-size: 2.5rem;
 }
 
-.homebanner__emojy {
+.emojy {
     width: 1em;
 }
 
-.homebanner__name {
-    font-size: 5rem;
+.name {
+    font-size: 4.5rem;
 }
 
-.homebanner__occupation {
-    font-size: 5rem;
+.occupation {
+    font-size: 4.5rem;
 }
 
-.homebanner__email {
+.email {
     font-family: var(--titlesfontfamily);
     font-size: 1.9rem;
     color: var(--detailscolor);
 }
 
-.homebanner__anchor {
+.anchor {
     background-color: var(--basicbtncolor);
     color: white;
     padding: 1em 2em;
     border-radius: 10px;
     font-size: 18px;
-    font-family: Mulish, sans-serif;
+    font-family: var(--titlesfontfamily); 
     font-weight: 500;
     letter-spacing: 0.025em;
 }
 
-.homebanner__img-cont {
+.img-cont {
     display: flex;
     width: 50%;
 }
