@@ -1,16 +1,17 @@
 import styles from '../styles/Projects.module.css';
+import Project from './Project';
 
 const Projects = () => {
     return ( 
         <div>
             <h2 className={styles.title}>{'<Proyectos/>'}</h2>
             <div className={styles.container}>
-                <div className={styles['img-cont']}>
-                    <img src='/habitshome.png'/>
-                </div>
-                <div className={styles['img-cont']}>
-                    <img src='/contadorapp.png'/>
-                </div>
+                <Project
+                src='/habitshome.png'
+                />
+                <Project
+                src='/contadorapp.png'
+                />
             </div>
         </div>
      );
