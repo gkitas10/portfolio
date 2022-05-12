@@ -4,13 +4,12 @@
 }
 
 .title {
+    padding-top: 2em;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .container {
     display: flex;
-}
-
-.img-cont {
-    width: 50%;
+    justify-content: space-around;
 }
