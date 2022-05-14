@@ -1,6 +1,5 @@
-.projects {
-    display: flex;
-    flex-direction: column;
+.main {
+    padding: 0 2em 0 2em;
 }
 
 .title {
@@ -10,6 +9,7 @@
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }

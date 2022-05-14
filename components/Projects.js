@@ -3,11 +3,14 @@ import Project from './Project';
 
 const Projects = () => {
     return ( 
-        <div>
+        <div className={styles.main}>
             <h2 className={styles.title}>{'<Proyectos/>'}</h2>
             <div className={styles.container}>
                 <Project
                 src='/habitshome.png'
+                />
+                <Project
+                src='/contadorapp.png'
                 />
                 <Project
                 src='/contadorapp.png'
