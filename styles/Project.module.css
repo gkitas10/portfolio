@@ -1,4 +1,30 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .project {
     position: relative;
     width: 90%;
+    /*line-height eliminates weird whitespace below images*/
+    line-height: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.repo-cont {
+    display: flex;
+   
+}
+
+.repo-row {
+    display: flex;
+}
+
+.stack-cont {
+    display: flex;
 }
