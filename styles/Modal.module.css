@@ -7,7 +7,6 @@
     bottom: 0;
     right: 0;
     left:0;
-    display: flex;
 }
 
 .main-hide {
@@ -16,5 +15,13 @@
 
 .btn {
     background-color: var(--detailscolor);
-
+    z-index: 200;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 20px;
+    padding: .5em 1em;
+    cursor: pointer;
 }

@@ -1,12 +1,13 @@
 .homebanner {
     display: flex;
-    padding: 0 2em;
+    padding: 0 2.5em;
 }
 
 .info {
     width: 50%;
     display: flex;
     align-items: center;
+    padding-left: 2.5em;
 }
 
 .info-cont {
@@ -30,11 +31,22 @@
 }
 
 .name {
+    margin-top: 10px;
     font-size: 4.5rem;
+}
+
+.span {
+    background-color: var(--detailscolor);
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    padding: 10px 20px;
 }
 
 .occupation {
     font-size: 4.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .email {
@@ -46,12 +58,19 @@
 .anchor {
     background-color: var(--basicbtncolor);
     color: white;
-    padding: 1em 2em;
+    padding: 1em 3em;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-family: var(--titlesfontfamily); 
     font-weight: 500;
     letter-spacing: 0.025em;
+}
+
+.anchor:hover {
+    background-color: white;
+    color: var(--basicfontcolor);
+    border: 1px solid var(--basicbtncolor);
+    transition: .4s;
 }
 
 .img-cont {

@@ -7,8 +7,8 @@ body {
   --basicfontcolor:#2A2C32;
   --basicbtncolor:#2a2c32;
   --detailscolor:#7390F9;
-  --contentfontfamily:'Fraunces', sans-serif;
-  --titlesfontfamily:'Open sans', sans-serif;
+  --contentfontfamily:'Fraunches';
+  --titlesfontfamily:'Mulish';
 }
 
 a {
