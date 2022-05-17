@@ -10,6 +10,9 @@ const Projects = ({ projectsDB }) => {
                     <Project
                     key={project._id}
                     src={project.imgsrc}
+                    url={project.url}
+                    repo={project.repo}
+                    stack={project.stack}
                     />
                 ))}
             </div>
