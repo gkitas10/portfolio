@@ -1,3 +1,14 @@
 .img-cont {
     display: inline-flex;
 }
+
+.icon-cont {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-cont {
+    height: 10px;
+}
+
+
