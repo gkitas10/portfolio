@@ -7,6 +7,7 @@ import { iconSwitch } from '../helpers/helpers.js';
 
 const Project = ({ src, url, repo, stack }) => {
     const [ showclass, setShowclass ] =useState(false);
+    const [ showlinks, setShowlinks ] = useState(false);
 
     const handleMouseEnter = () => {
         setShowclass(true)
@@ -14,6 +15,10 @@ const Project = ({ src, url, repo, stack }) => {
 
     const handleMouseLeave = () => {
         setShowclass(false)
+    }
+
+    const handleIconMouseEnter = () => {
+        setShowlinks(true)
     }
 
     return ( 
@@ -28,17 +33,18 @@ const Project = ({ src, url, repo, stack }) => {
             <div className={styles.info}>
                 <div className={styles['repo-cont']}>
                     <div className={styles['repo-row']}>
-                        <Ghicon/>
-                        <div className={styles['links-cont']}>
+                        <Ghicon onMouseEnter={handleMouseEnter}/>
+                        { showlinks && (<div className={styles['links-cont']}>
                             <a href={repo}>Frontend</a>
                             <a href={repo}>Backend</a>
-                        </div>
+                        </div>)
+                        }
                     </div>
                 </div>
                 <div className="stack-cont">
                     { stack.map((tech, idx, arr) => {
                         
-                        return iconSwitch(tech)
+                        return iconSwitch(tech, idx)
                     })}
                 </div>
             </div>
