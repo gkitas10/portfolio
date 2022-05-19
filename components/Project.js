@@ -31,25 +31,24 @@ const Project = ({ src, url, repo, stack }) => {
                 </Modal>
             </div>
             <div className={styles.info}>
-                <div className={styles['repo-cont']}>
-                    <div className={styles['repo-row']}>
-                        <Ghicon onMouseEnter={handleMouseEnter}/>
-                        { showlinks && (<div className={styles['links-cont']}>
-                            <a href={repo}>Frontend</a>
-                            <a href={repo}>Backend</a>
-                        </div>)
-                        }
-                    </div>
-                </div>
-                <div className="stack-cont">
+                <div className={styles['stack-cont']}>
                     { stack.map((tech, idx, arr) => {
                         
                         return iconSwitch(tech, idx)
                     })}
                 </div>
+                <div className={styles['repo-cont']}>
+                    <div className={styles['repo-row']}>
+                        <Ghicon setShowlinks={setShowlinks}/>
+                        { showlinks && (<div className={styles['links-cont']}>
+                            <a className={styles.link + ' ' + styles.front} href={repo}>Frontend</a>
+                            <a className={styles.link + ' ' + styles.back} href={repo}>Backend</a>
+                        </div>)
+                        }
+                    </div>
+                </div>
             </div>
-        </div>
-        
+        </div> 
      );
 }
  
