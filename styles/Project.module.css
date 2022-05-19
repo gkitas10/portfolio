@@ -15,18 +15,41 @@
     display: flex;
     flex-direction: column;
     width: 90%;
+    padding-top: 1em;
 }
 
 .repo-cont {
     display: flex;
-   
+    margin-top: 1em;
 }
 
 .repo-row {
     display: flex;
     height: 40px;
+    width: 100%;
+}
+
+.links-cont {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.link {
+    font-family: var(--titlesfontfamily);
+}
+
+.back {
+    margin-left: 1em;
+}
+
+.front {
+    margin-right: 1em;
 }
 
 .stack-cont {
     display: flex;
+    height: 40px;
+    justify-content: space-between;
 }
