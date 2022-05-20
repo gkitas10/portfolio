@@ -7,7 +7,7 @@ import { iconSwitch } from '../helpers/helpers.js';
 
 const Project = ({ src, url, repo, stack }) => {
     const [ showclass, setShowclass ] =useState(false);
-    const [ showlinks, setShowlinks ] = useState(false);
+    const [ animatelinks, setAnimatelinks ] = useState(false);
 
     const handleMouseEnter = () => {
         setShowclass(true)
@@ -15,10 +15,6 @@ const Project = ({ src, url, repo, stack }) => {
 
     const handleMouseLeave = () => {
         setShowclass(false)
-    }
-
-    const handleIconMouseEnter = () => {
-        setShowlinks(true)
     }
 
     return ( 
@@ -39,12 +35,16 @@ const Project = ({ src, url, repo, stack }) => {
                 </div>
                 <div className={styles['repo-cont']}>
                     <div className={styles['repo-row']}>
-                        <Ghicon setShowlinks={setShowlinks}/>
-                        { showlinks && (<div className={styles['links-cont']}>
-                            <a className={styles.link + ' ' + styles.front} href={repo}>Frontend</a>
-                            <a className={styles.link + ' ' + styles.back} href={repo}>Backend</a>
-                        </div>)
-                        }
+                        <Ghicon setAnimatelinks={setAnimatelinks}/>
+                        <div className={styles['links-relative-cont']}>
+                            <div className={animatelinks ? styles['links-cont'] : styles['links-cont-hidden'] }>
+                                <a className={styles.link + ' ' + styles.front} href={repo}>Frontend</a>
+                                <a className={styles.link + ' ' + styles.back} href={repo}>Backend</a>
+                            </div>
+                        </div>
+                        
+
+
                     </div>
                 </div>
             </div>
