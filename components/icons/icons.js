@@ -14,10 +14,11 @@ export const ReactIcon = () => {
     );
 }
 
-export const Ghicon = ({ setShowlinks }) => {
+export const Ghicon = ({ setAnimatelinks }) => {
     const handleMouseEnter = () => {
-        setShowlinks(true);
+        setAnimatelinks(true);
     }
+    
 return (
     <div className={styles['icon-cont']}>
         <svg className="" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="40px" height="40px" onMouseEnter={handleMouseEnter}>
