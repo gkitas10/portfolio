@@ -1,0 +1,35 @@
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%;
+    
+}
+
+.slider {
+    display:flex;
+    transition: ease 1000ms;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.dots-cont {
+    display: flex;
+    padding: 1em 0;
+    justify-content: center;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    margin: 0 .2em;
+    cursor: pointer;
+}
+
+.active {
+    background-color: gray;
+}
