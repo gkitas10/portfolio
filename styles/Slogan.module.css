@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+.content {
+    font-size: 3rem;
+    font-family: var(--contentfontfamily);
+}
