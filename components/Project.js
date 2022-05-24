@@ -38,8 +38,8 @@ const Project = ({ src, url, repo, stack }) => {
                         <Ghicon setAnimatelinks={setAnimatelinks}/>
                         <div className={styles['links-relative-cont']}>
                             <div className={animatelinks ? styles['links-cont'] : styles['links-cont-hidden'] }>
-                                <a className={styles.link + ' ' + styles.front} href={repo}>Frontend</a>
-                                <a className={styles.link + ' ' + styles.back} href={repo}>Backend</a>
+                                <a className={styles.link + ' ' + styles.front} href={repo?.frontend} target="_blank">Frontend</a>
+                                <a className={styles.link + ' ' + styles.back} href={repo?.backend} target="_blank">Backend</a>
                             </div>
                         </div>
                         
