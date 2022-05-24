@@ -1,0 +1,70 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: #7390F9;
+    padding: 3em 3em;
+    min-height: 100vh;
+}
+
+.project {
+    display: flex;
+    background-color: white;
+    padding: 2em 2em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.paragraph {
+    font-family: var(--titlesfontfamily);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.imgs-section {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+}
+
+.img-cont {
+    display: flex;
+    width: 70%;
+    
+}
+
+.img {
+    object-fit: contain;
+}
+
+.btn-cont {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-btn {
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50%;
+    opacity: .5;
+    background-image: url('/arrow.png');
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
