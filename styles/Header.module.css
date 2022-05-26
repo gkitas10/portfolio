@@ -13,6 +13,13 @@
     
 }
 
+.link-wrapper {
+    background-image: url('../public/jglogo.svg');
+    background-repeat: no-repeat;
+    width: 80px;
+    cursor: pointer;
+}
+
 .nav-cont {
     display: flex;
     height: 100%;
