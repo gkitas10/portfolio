@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from '../styles/Slider.module.css';
 
 const Slider = ({ project }) => {
-    const { name, imgs } = project; 
+    const { name, sliderimgs, imgsfolder } = project; 
     const [ index, setIndex ] = useState(0);
 
     return (
@@ -10,13 +10,13 @@ const Slider = ({ project }) => {
             <div className={styles.slider}
             style={{ transform: `translate(${-index * 100}%)`}}
             >
-                { imgs.map((imgname, idx) => (
-                    <img src={name+ '/' + imgname} key={idx} className={styles.image}/>
+                { sliderimgs?.map((imgname, idx) => (
+                    <img src={imgsfolder+ '/' + imgname} key={idx} className={styles.image}/>
                 ))}
                 
             </div>
             <div className={styles['dots-cont']}>
-                { imgs.map((_, idx) => (
+                { sliderimgs?.map((_, idx) => (
                     <div 
                     key={idx}
                     className={styles.dot + (index === idx ? ' ' + styles.active : '') }
