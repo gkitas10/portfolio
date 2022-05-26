@@ -79,3 +79,13 @@ export const ExpressIcon = () => {
         
     );
 }
+
+export const LinkedIn = () => {
+    return (
+        <div className={styles['icon-cont']}>
+            <img
+            src='/linkedin3.png'
+            />
+        </div>
+    );
+}
