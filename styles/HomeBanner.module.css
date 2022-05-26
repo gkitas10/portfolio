@@ -1,6 +1,9 @@
 .homebanner {
     display: flex;
     padding: 0 2.5em;
+    background-image: url('/homebannerback.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .info {
