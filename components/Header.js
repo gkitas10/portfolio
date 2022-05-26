@@ -6,7 +6,7 @@ const Header = () => {
     return ( 
         <div className={styles.header}>
             <div className={styles['logo-cont']}>
-                <img src='jglogo.svg'/>
+                <Link href='/'><div className={styles['link-wrapper']}><a></a></div></Link>
             </div>
             <div className={styles['nav-cont']}>
                 <navbar>
