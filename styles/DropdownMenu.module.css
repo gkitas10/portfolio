@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border: .5px solid #BBBBBC;
+    width: max-content;
+    top: 100%;
+    padding: .5em .5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.link {
+    color: #BBBBBC;
+}
+
+.link:hover {
+    color: white;
+}
+
+
