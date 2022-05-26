@@ -53,6 +53,7 @@
 .email {
     font-family: var(--titlesfontfamily);
     font-size: 1.9rem;
+    font-weight: 500;
     color: var(--detailscolor);
 }
 
