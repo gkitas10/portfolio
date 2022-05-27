@@ -1,21 +1,23 @@
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
-import { Jglogo } from './icons/icons';
+import { useRouter } from 'next/router';
 
 const Header = () => {
+    const router = useRouter()
+    const themeclass = router.route === '/about-projects' ? 'dark' : 'main';
+
     return ( 
-        <div className={styles.header}>
+        <div className={ styles[themeclass] }>
             <div className={styles['logo-cont']}>
-                <Link href='/'><div className={styles['link-wrapper']}><a></a></div></Link>
+                <Link href='/'><div className={ themeclass === 'dark' ? styles['link-wrapper-dark'] : styles['link-wrapper'] }><a></a></div></Link>
             </div>
             <div className={styles['nav-cont']}>
                 <navbar>
-                    <Link href='/about-projects'><a className={styles.header__anchor}>Acerca de mis proyectos</a></Link> 
-                    <Link href='/about'><a className={styles.header__anchor}>Acerca de mi</a></Link>
-                    <Link href='/contact'><a className={styles.header__anchor}>Contacto</a></Link>
+                    <Link href='/about-projects'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Acerca de mis proyectos</a></Link> 
+                    <Link href='/about'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Acerca de mi</a></Link>
+                    <Link href='/contact'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Contacto</a></Link>
                 </navbar>
             </div>
-            
         </div>
      );
 }
