@@ -23,21 +23,22 @@ const Contact = () => {
 
         await axiosClient.post('/api/contact', email);
     }
+
     return (
         <div className={styles.main}>
             <div className={styles.form_cont}>
                 <form className={styles.form} onSubmit={handleSubmit}>
                     <div className={styles.form_group}>
                         <div className={styles.label}>nombre</div>
-                        <input type="text" name='name' className={styles.form_control} onChange={handleChange}/>
+                        <input type="text" name='name' value={email.name} className={styles.form_control} onChange={handleChange}/>
                     </div>
                     <div className={styles.form_group}>
                         <div className={styles.label}>Correo</div>
-                        <input type="text" name='useremailaddress' className={styles.form_control} onChange={handleChange}/>
+                        <input type="email" name='useremailaddress' value={email.useremailaddress} className={styles.form_control} onChange={handleChange}/>
                     </div>
                     <div className={styles.form_group}>
                         <label className={styles.label}>Mensaje</label>
-                        <textarea className={styles.textarea} name='message' onChange={handleChange}/>
+                        <textarea className={styles.textarea} name='message' value={email.message} onChange={handleChange}/>
                     </div>
                     <div className={styles.form_group}>
                         <input type='submit' value='Enviar'/>
