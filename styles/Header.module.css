@@ -1,10 +1,22 @@
-.header {
+.main {
     height: 15vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-right: 2.5em;
     padding-left: 5em;
+}
+
+.dark {
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 2.5em;
+    padding-left: 5em;
+    /*styles for dar theme*/
+    background-color: var(--basicbtncolor);
+    color: #BBBBBC;
 }
 
 .logo-cont {
@@ -15,6 +27,13 @@
 
 .link-wrapper {
     background-image: url('../public/jglogo.svg');
+    background-repeat: no-repeat;
+    width: 80px;
+    cursor: pointer;
+}
+
+.link-wrapper-dark {
+    background-image: url('../public/jggris.svg');
     background-repeat: no-repeat;
     width: 80px;
     cursor: pointer;
@@ -34,4 +53,9 @@
     font-size: 1.3rem;
     margin-left: 2em;
     letter-spacing: 0.025em;
+}
+
+.header__anchor_dark:hover {
+    color: white;
+    transition: 1.5s;
 }
