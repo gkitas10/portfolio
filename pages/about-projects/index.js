@@ -4,12 +4,12 @@ import axiosClient from "../../axios/axios";
 import Layout from "../../components/Layout";
 
 const AboutProjectsPage = ({ projectsDB }) => {
-  console.log(projectsDB);
+  
   return (
     <Layout>
       <div className={styles.main}>
         {projectsDB.map((project, idx) => (
-          <div className={styles.project}>
+          <div className={styles.project} key={project._id}>
             <div className={styles.info}>
               <h2>{project.name}</h2>
               <p className={styles.paragraph}>{project.description}</p>
