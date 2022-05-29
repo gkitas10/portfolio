@@ -23,7 +23,7 @@ const Project = ({ src, url, repo, stack }) => {
                 <img src={src}/>
                 <Modal>
                     <div className={showclass ? ModalStyles.main : ModalStyles['main-hide'] }></div>
-                    <a className={showclass ? ModalStyles.btn : ModalStyles['main-hide']} href={url} target="_blank">Visita el sitio</a>
+                    <a className={showclass ? ModalStyles.btn : ModalStyles['main-hide']} href={url} target="_blank" rel="noopener noreferrer">Visita el sitio</a>
                 </Modal>
             </div>
             <div className={styles.info}>
@@ -38,8 +38,8 @@ const Project = ({ src, url, repo, stack }) => {
                         <Ghicon setAnimatelinks={setAnimatelinks} hover/>
                         <div className={styles['links-relative-cont']}>
                             <div className={animatelinks ? styles['links-cont'] : styles['links-cont-hidden'] }>
-                                <a className={styles.link + ' ' + styles.front} href={repo?.frontend} target="_blank">Frontend</a>
-                                <a className={styles.link + ' ' + styles.back} href={repo?.backend} target="_blank">Backend</a>
+                                <a className={styles.link + ' ' + styles.front} href={repo?.frontend} target="_blank" rel="noopener noreferrer">Frontend</a>
+                                <a className={styles.link + ' ' + styles.back} href={repo?.backend} target="_blank" rel="noopener noreferrer">Backend</a>
                             </div>
                         </div>
                         
