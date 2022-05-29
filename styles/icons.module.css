@@ -7,8 +7,27 @@
     align-items: center;
 }
 
+.smallicon {
+    width: 40px;
+}
+
 .arrow-cont {
     height: 10px;
 }
 
+.img {
+    max-height: 100px;
+}
 
+.nextjs_svg {
+    transform: translateX(4%);
+    shape-rendering: auto;
+}
+
+.svg {
+    max-height: 100px;
+}
+
+.giticon {
+    max-width: 50%;
+}
