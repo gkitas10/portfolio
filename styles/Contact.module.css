@@ -1,4 +1,69 @@
 .main {
     display: flex;
+    justify-content: center;
+    background-color: rgba(115, 144, 249, .2);
+    min-height: 85vh;
+    padding-top: 4em;
+}
+
+.form_cont {
+    display: flex;
+    border: 1px solid rgba(42, 44, 50, .8);
+    width: 50%;
+    justify-content: center;
+    height: fit-content;
+    padding: 2em 2em;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_group {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.msg_form_group {
+    height: 150px;
+}
+
+.label {
+    font-family: var(--titlesfontfamily);
+    width: 20%;
+    color: var(--basicfontcolor);
+}
+
+.input_wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.form_control {
+    background-color: rgba(115, 144, 249, .45);
+    border-radius: 4px;
+    width: 80%;
+}
+
+.textarea {
+    background-color: rgba(115, 144, 249, .45);
+    border-radius: 4px;
+    width: 80%;
+    border: none;
+}
+
+.input_submit {
+    background-color: var(--basicbtncolor);
+    color: white;
+    padding: 1em 3em;
+    border-radius: 10px;
+    font-family: var(--titlesfontfamily); 
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    border: none;
+    cursor: pointer;
 }
 
