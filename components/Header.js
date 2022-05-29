@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 const Header = () => {
     const router = useRouter()
-    const themeclass = router.route === '/about-projects' ? 'dark' : 'main';
+    const themeclass = router.route === '/about-projects' || router.route === '/contact' ? 'dark' : 'main';
 
     return ( 
         <div className={ styles[themeclass] }>
