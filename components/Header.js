@@ -5,7 +5,7 @@ import { JgIcon } from './icons/icons';
 
 const Header = () => {
     const router = useRouter()
-    const themeclass = router.route === '/about-projects' || router.route === '/contact' ? 'dark' : 'main';
+    const themeclass = router.route === '/about-projects' || router.route === '/contact' || router.route === '/aboutme' ? 'dark' : 'main';
 
     return ( 
         <div className={ styles[themeclass] }>
