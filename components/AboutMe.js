@@ -1,5 +1,5 @@
 import styles from '../styles/AboutMe.module.css';
-import { AngularIcon, Auth0Icon, ExpressIcon, FirebaseIcon, Ghicon, Jsicon, MongodbIcon, NodejsIcon, ReactIcon, NextjsIcon } from './icons/icons';
+import { AngularIcon, Auth0Icon, ExpressIcon, FirebaseIcon, Ghicon, Jsicon, MongodbIcon, NodejsIcon, ReactIcon, NextjsIcon, Giticon } from './icons/icons';
 
 const AboutMe = () => {
     return (
@@ -26,6 +26,7 @@ const AboutMe = () => {
                     <Auth0Icon/>
                     <Jsicon/>
                     <NextjsIcon/>
+                    <Giticon/>
                 </div>
             </div>
         </div>
