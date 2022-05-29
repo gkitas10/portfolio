@@ -31,3 +31,12 @@
 .giticon {
     max-width: 50%;
 }
+
+.jgicon {
+    min-width: 100px;
+    fill: #242F65;
+}
+
+.jgicon_dark {
+    fill: #bbbbbc;
+}
