@@ -14,7 +14,7 @@ const Header = () => {
             <div className={styles['nav-cont']}>
                 <navbar>
                     <Link href='/about-projects'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Acerca de mis proyectos</a></Link> 
-                    <Link href='/about'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Acerca de mi</a></Link>
+                    <Link href='/aboutme'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Acerca de mi</a></Link>
                     <Link href='/contact'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Contacto</a></Link>
                 </navbar>
             </div>
