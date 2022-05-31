@@ -11,7 +11,7 @@ let baseURL = '';
 
 
 const axiosClient = axios.create({
-    baseURL:'pages/api/'/* http://localhost:3000 */
+    baseURL:'http://localhost:3000'
 });
 
 export default axiosClient;
