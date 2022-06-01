@@ -7,4 +7,5 @@
 .content {
     font-size: 3rem;
     font-family: var(--contentfontfamily);
+    color: var(--basicfontcolor);
 }

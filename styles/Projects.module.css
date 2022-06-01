@@ -5,8 +5,10 @@
 .title {
     padding-top: 2em;
     text-align: center;
+    color: var(--basicfontcolor);
     margin-bottom: 2em;
     font-family: var(--titlesfontfamily);
+    font-weight: 500;
 }
 
 .container {
