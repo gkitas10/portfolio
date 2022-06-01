@@ -1,7 +1,14 @@
 import { MongoClient } from 'mongodb';
 
 async function mongodbConnection () {
-    const client = await MongoClient.connect('mongodb+srv://gkitas89:3YF28dO77j3dSzyB@cluster0.r1vbn.mongodb.net/?retryWrites=true&w=majority')
+    let URL = '';
+    if(process.env.NODE_ENV === 'production'){
+        URL = process.env.MONGO_URI; 
+    }else {
+        URL = process.env.DEV_URI;
+    }
+
+    const client = await MongoClient.connect(URL);
     const db = client.db('portfolio')
     return {
         client,

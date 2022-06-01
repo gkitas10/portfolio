@@ -2,6 +2,7 @@ import styles from "../../styles/AboutProjectsPage.module.css";
 import Slider from "../../components/Slider";
 import axiosClient from "../../axios/axios";
 import Layout from "../../components/Layout";
+import mongodbConnection from "../../db/dbconnection";
 
 const AboutProjectsPage = ({ projectsDB }) => {
   
@@ -27,8 +28,18 @@ const AboutProjectsPage = ({ projectsDB }) => {
 export default AboutProjectsPage;
 
 export async function getStaticProps() {
-  const response = await axiosClient.get("/api/projects");
-  const projectsDB = response.data.response;
+  // const response = await axiosClient.get("/api/projects");
+  // const projectsDB = response.data.response;
+
+  const { client, db } = await mongodbConnection();
+  const projectsCollection = db.collection('projects');
+  const response = await projectsCollection.find().toArray();
+  const projectsDB = response.map((project) => {
+    return {
+        ...project,
+        _id:project._id.toString()
+    }
+})
 
   return {
     props: {
