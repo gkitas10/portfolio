@@ -3,11 +3,11 @@ import Layout from "../../../components/Layout";
 import mongodbConnection from "../../../db/dbconnection";
 
 const TutorialsPage = ({ projectsDB }) => {
-    console.log(projectsDB);
+    
     const router = useRouter();
     const id = router.query.tutorialid;
+    console.log(id);
     const project = projectsDB.filter((project) => project._id === id)[0];
-    console.log(project);
 
     return (
         <Layout>
@@ -28,7 +28,9 @@ export async function getStaticPaths() {
             {
                 params:{
                     tutorialid:'62817894a2a32523ac325962'
-                },
+                } 
+            },            
+            {   
                 params:{
                     tutorialid:'6281794ea2a32523ac325963'
                 }
