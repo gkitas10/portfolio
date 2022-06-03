@@ -24,6 +24,10 @@
 .burger_background_active {
     background-color: #ff774c;
 }
+/*Only visible when width is greater than 1024px*/
+.nav {
+    flex-grow: 1;
+}
 
 @media screen and (min-width:580px) {
     .main {
