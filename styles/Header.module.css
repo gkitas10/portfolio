@@ -31,6 +31,18 @@
     }
 }
 
+@media screen and (min-width:768px) {
+    .main {
+        height: 12vh;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .burger_background {
+        display: none;
+    }
+}
+
 /* .logo-cont {
     height: 60px;
 } */
