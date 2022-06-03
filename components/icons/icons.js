@@ -168,7 +168,7 @@ export const JgIcon = ({ themeclass }) => {
 
 export const BurguerIcon = () => {
     return (
-        <svg className={styles.burguer_icon} viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.burger_icon} viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <rect id="icon-bound" fill="none" />
                 <path d="M1,9h14V7H1V9z M1,14h14v-2H1V14z M1,2v2h14V2H1z" />
         </svg>
