@@ -35,7 +35,7 @@ const Project = ({ src, url, repo, stack }) => {
                 </div>
                 <div className={styles['repo-cont']}>
                     <div className={styles['repo-row']}>
-                        <Ghicon setAnimatelinks={setAnimatelinks} hover/>
+                        <Ghicon setAnimatelinks={setAnimatelinks} small hover/>
                         <div className={styles['links-relative-cont']}>
                             <div className={animatelinks ? styles['links-cont'] : styles['links-cont-hidden'] }>
                                 <a className={styles.link + ' ' + styles.front} href={repo?.frontend} target="_blank" rel="noopener noreferrer">Frontend</a>
