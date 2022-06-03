@@ -1,7 +1,80 @@
 .homebanner {
     display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.info_cont {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color:var(--basicfontcolor);
+    font-family: var(--contentfontfamily);
+    font-weight: 600;
+    align-items: center;
+}
+
+.greeting_cont {
+    display: flex;
+}
+
+.homebanner__greeting {
+    font-size: 1.7rem;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.span {
+    background-color: var(--detailscolor);
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+    padding: 8px 16px;
+    width: fit-content;
+}
+
+.occupation {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.email {
+    font-family: var(--titlesfontfamily);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--detailscolor);
+}
+
+.anchor {
+    display: flex;
+    background-color: var(--basicbtncolor);
+    color: white;
+    padding: 1em 3em;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: var(--titlesfontfamily); 
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    width: 60%;
+    justify-content: center;
+}
+
+
+/* .homebanner {
+    display: flex;
     padding: 0 2.5em;
-    /* background-image: url('/homebannerback.png'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -81,4 +154,4 @@
 .img-cont {
     display: flex;
     width: 50%;
-}
+} */
