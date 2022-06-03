@@ -32,8 +32,13 @@
     max-width: 60%;
 }
 
+.linkedinicon {
+    margin-left: 1em;
+}
+
 .jgicon {
     min-width: 100px;
+    max-width: 100px;
     fill: #242F65;
 }
 
@@ -44,4 +49,9 @@
 .jgicon_dark:hover {
     fill: white;
     transition: 1s;
+}
+
+.burguer_icon {
+    width: 25px;
+    fill: white;
 }
