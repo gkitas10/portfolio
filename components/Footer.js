@@ -3,12 +3,22 @@ import styles from "../styles/Footer.module.css";
 import Link from "next/link";
 import { LinkedIn } from "./icons/icons";
 import DropdownMenu from "./DropdownMenu";
+import { useMediaQuery } from "react-responsive";
 
 const Footer = ({ projectsDB }) => {
   const [ dropdown, setDropdown] = useState(false);
+
+  const isDesktop = useMediaQuery({
+    query: "(min-width: 1224px)"
+  })
+
   const handleMouseEnter = () => {
     setDropdown(true);
   };
+
+  const handleClick = () => {
+    setDropdown(!dropdown);
+  }
 
   return (
     <footer className={styles.main}>
@@ -21,21 +31,23 @@ const Footer = ({ projectsDB }) => {
         </Link>
         <div
           className={styles.link + " " + styles.tutorials}
-          onMouseEnter={handleMouseEnter}
+          onClick={ !isDesktop ? handleClick : null }
+          onMouseEnter={isDesktop ? handleMouseEnter : null }
         >
           Tutoriales
-          <img src="dropdownarrow.png" className={styles.img} />
+          <img src="dropdownarrow.png" className={styles.arrow} />
           { dropdown && (<DropdownMenu projectsDB={projectsDB} setDropdown={setDropdown} />)
            }
           
         </div>
       </div>
-      <div className={styles["social-cont"]}>
+      <div className={styles.logos_cont}>
+        <div className={styles.jglogo_cont}>
+          <img src="jggris.svg" />
+        </div>
         <LinkedIn />
       </div>
-      <div className={styles["logo-cont"]}>
-        <img src="jggris.svg" />
-      </div>
+      
     </footer>
   );
 };
