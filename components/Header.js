@@ -1,25 +1,32 @@
 import Link from 'next/link';
+import { useState } from 'react';
 import styles from '../styles/Header.module.css';
 import { useRouter } from 'next/router';
-import { JgIcon } from './icons/icons';
+import { BurguerIcon, JgIcon } from './icons/icons';
+import Navlinks from './Navlinks';
+import NavlinksMobile from './NavlinksMobile';
 
 const Header = () => {
     const router = useRouter()
     const themeclass = router.route === '/about-projects' || router.route === '/contact' || router.route === '/aboutme' ? 'dark' : 'main';
+    const [ showmobile, setShowmobile ] = useState(false);
 
     return ( 
         <div className={ styles[themeclass] }>
             <div className={styles['logo-cont']}>
-                {/* <Link href='/'><div className={ themeclass === 'dark' ? styles['link-wrapper-dark'] : styles['link-wrapper'] }><a></a></div></Link> */}
-                <Link href='/'><a className={styles.anchor}><JgIcon themeclass={themeclass}/></a></Link> 
+                <Link href='/'><a className={styles.anchor}>{<JgIcon themeclass={themeclass}/>}</a></Link> 
             </div>
-            <div className={styles['nav-cont']}>
-                <navbar>
-                    <Link href='/about-projects'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Acerca de mis proyectos</a></Link> 
-                    <Link href='/aboutme'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Acerca de mi</a></Link>
-                    <Link href='/contact'><a className={styles.header__anchor + (themeclass === 'dark' ? (' ' + styles.header__anchor_dark) : '') }>Contacto</a></Link>
-                </navbar>
+            <div className={styles.burger_wrapper}>
+                <div className={styles.burger_background + (showmobile ? (' ' + styles.burger_background_active) : '')}
+                onClick={ () => setShowmobile(!showmobile) }
+                >
+                     <BurguerIcon/>
+                </div>
             </div>
+            <navbar className={styles.nav}>
+                { showmobile ? <NavlinksMobile themeclass={themeclass}/> : <Navlinks themeclass={themeclass}/> }
+            </navbar>
+                {/* <div className={styles['nav-cont']}></div> */}
         </div>
      );
 }
