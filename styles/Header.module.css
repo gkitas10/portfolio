@@ -1,10 +1,45 @@
 .main {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-family:var(--titlesfontfamily);
+    color:var(--basicfontcolor);
+    padding: 0 5%;
+}
+
+.burger_wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burger_background {
+    background-color: #242F65;
+    border-radius: 10px;
+    padding: 1.1em 1.1em;
+}
+
+.burger_background_active {
+    background-color: #ff774c;
+}
+
+/* .logo-cont {
+    height: 60px;
+} */
+
+
+/* .main {
     height: 15vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-right: 2.5em;
     padding-left: 5em;
+    position: relative;
+    font-family:var(--titlesfontfamily);
+    color:var(--basicfontcolor);
 }
 
 .dark {
@@ -14,7 +49,6 @@
     align-items: center;
     padding-right: 2.5em;
     padding-left: 5em;
-    /*styles for dar theme*/
     background-color: var(--basicbtncolor);
     color: #BBBBBC;
 }
@@ -22,21 +56,18 @@
 .logo-cont {
     display: flex;
     height: 60px;
-    
 }
 
-.link-wrapper {
-    background-image: url('../public/jglogo.svg');
-    background-repeat: no-repeat;
-    width: 80px;
-    cursor: pointer;
+.anchor {
+    display: flex;
 }
 
-.link-wrapper-dark {
-    background-image: url('../public/jggris.svg');
-    background-repeat: no-repeat;
-    width: 80px;
-    cursor: pointer;
+.burguer_icon {
+    width: 35px;
+}
+
+.nav {
+    flex-grow: 1;
 }
 
 .nav-cont {
@@ -46,16 +77,4 @@
     justify-content: flex-end;
     flex-grow: 1;
 }
-
-.header__anchor {
-    font-family: var(--titlesfontfamily);
-    font-weight: 500;
-    font-size: 1.3rem;
-    margin-left: 2em;
-    letter-spacing: 0.025em;
-}
-
-.header__anchor_dark:hover {
-    color: white;
-    transition: 1.5s;
-}
+ */
