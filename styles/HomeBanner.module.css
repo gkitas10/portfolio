@@ -71,6 +71,10 @@
     justify-content: center;
 }
 
+.img-cont {
+    margin: 0 auto;
+} 
+
 
 /* .homebanner {
     display: flex;
