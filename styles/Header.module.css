@@ -25,6 +25,12 @@
     background-color: #ff774c;
 }
 
+@media screen and (min-width:580px) {
+    .main {
+        height: 35vh;
+    }
+}
+
 /* .logo-cont {
     height: 60px;
 } */
