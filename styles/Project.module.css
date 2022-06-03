@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3em;
 }
 
 .project {
     position: relative;
-    width: 90%;
+    width: 100%;
     /*line-height eliminates weird whitespace below images*/
     line-height: 0;
 }
