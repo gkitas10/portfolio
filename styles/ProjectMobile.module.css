@@ -1,0 +1,64 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.project {
+    width: 100%;
+    /*line-height eliminates weird whitespace below images*/
+    line-height: 0;
+}
+
+.project_img {
+    border-radius: 6px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1em;
+}
+
+.repo-cont {
+    display: flex;
+    margin-top: 1em;
+}
+
+.repo-row {
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+
+.links_cont {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links_wrapper {
+    display: flex;
+    
+}
+
+.link {
+    font-family: var(--titlesfontfamily);
+}
+
+.back {
+    margin-left: 1em;
+}
+
+.front {
+    margin-right: 1em;
+}
+
+.stack-cont {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+}
