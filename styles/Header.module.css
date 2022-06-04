@@ -47,6 +47,12 @@
     }
 }
 
+@media screen and (min-width:1224px) {
+    .main {
+        height: 20vh;
+    }
+}
+
 /* .logo-cont {
     height: 60px;
 } */
