@@ -68,3 +68,9 @@
     height: 40px;
     justify-content: space-between;
 }
+
+@media screen and (max-width:1224px) {
+    .main {
+        display: none;
+    }
+}
