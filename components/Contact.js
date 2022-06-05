@@ -26,7 +26,6 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
       <div className={styles.main}>
         <div className={styles.form_cont}>
           <form className={styles.form} onSubmit={handleSubmit}>
@@ -73,7 +72,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </Layout>
   );
 };
 
