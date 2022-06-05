@@ -4,11 +4,11 @@ import AboutMe from '../../components/AboutMe';
 
 const AboutmePage = () => {
     return ( 
-        <Layout>
             <div className={styles.main}>
-                <AboutMe/>
+                <Layout>
+                    <AboutMe/>
+                </Layout>
             </div>
-        </Layout>
      );
 }
  
