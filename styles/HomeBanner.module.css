@@ -92,6 +92,36 @@
         font-size: 1.4rem;
     }
 }
+
+@media only screen and (min-width: 1224px) {
+    .homebanner {
+        flex-direction: row;    
+    }
+
+    .info_cont {
+        align-items: flex-start;
+    }
+
+    .homebanner__greeting {
+        font-size: 3rem;
+    }
+
+    .name {
+        font-size: 4.5rem;
+    }
+
+    .occupation {
+        font-size: 4rem;
+    }
+
+    .email {
+        font-size: 1.9rem;
+    }
+
+    .anchor {
+        font-size: 1.5rem;
+    }
+}
 /* display: flex;
     flex-direction: column;
     color:var(--basicfontcolor);
