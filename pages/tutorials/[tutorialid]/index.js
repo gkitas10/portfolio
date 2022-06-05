@@ -10,13 +10,13 @@ const TutorialsPage = ({ projectsDB }) => {
     const project = projectsDB.filter((project) => project._id === id)[0];
 
     return (
-        <Layout>
-            <div>
+        <div>
+            <Layout>
                 <img
                 src={'/' + project.imgsfolder + '/tutorial.png'}
                 />
-            </div>
-        </Layout> 
+            </Layout>
+        </div>
     );
 }
  
