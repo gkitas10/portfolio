@@ -19,9 +19,6 @@ const Header = () => {
                      <BurguerIcon/>
                 </div>
             </div>
-            {/* {
-                showmobile ? <navbar className={styles.nav +' '+ styles.nav_mobile}><NavlinksMobile themeclass={themeclass}/></navbar> : <navbar className={styles.nav}><Navlinks themeclass={themeclass}/></navbar>
-            } */}
             <navbar className={styles.nav}>
                 { showmobile ? <NavlinksMobile/> : <Navlinks/> }
             </navbar>

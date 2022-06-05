@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
-import { LinkedIn } from "./icons/icons";
 import DropdownMenu from "./DropdownMenu";
 import { useMediaQuery } from "react-responsive";
 
