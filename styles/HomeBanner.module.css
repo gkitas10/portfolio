@@ -70,6 +70,13 @@
     width: 60%;
     justify-content: center;
 }
+/*Takes effect when 1224px+*/
+.anchor:hover {
+    background-color: white;
+    color: var(--basicfontcolor);
+    border: 1px solid var(--basicbtncolor);
+    transition: .4s;
+}
 
 .img-cont {
     margin: 0 auto;
