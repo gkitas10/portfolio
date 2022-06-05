@@ -9,6 +9,10 @@
     margin: 0 auto 2em;
 }
 
+.img_section {
+    margin-bottom: 1em;
+}
+
 .image {
     width: 500px;
     border-radius: 10px;
@@ -21,4 +25,25 @@
     gap: 10px;
     width: 90%;
     margin: 0 auto;
+}
+
+@media screen and (min-width:1024px) { 
+    .paragraph {
+        margin: 1em auto 2em;
+    }
+}
+
+@media screen and (min-width:1224px) {
+    .paragraph {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+
+    .img_section {
+        margin-bottom: 2em;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
