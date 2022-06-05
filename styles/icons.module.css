@@ -38,12 +38,8 @@
     fill: #242F65;
 }
 
-.jgicon_dark {
-    fill: #bbbbbc;
-}
-
-.jgicon_dark:hover {
-    fill: white;
+.jgicon:hover {
+    fill: #ff774c;
     transition: 1s;
 }
 
