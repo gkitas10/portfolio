@@ -20,6 +20,12 @@
 }
 
 @media screen and (min-width:1224px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .title {
         font-size: 1.5rem;
     }

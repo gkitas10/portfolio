@@ -20,7 +20,7 @@ const Project = ({ src, url, repo, stack }) => {
     return ( 
         <div className={styles.main}>
             <div className={styles['project']} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <img src={src}/>
+                <img src={src} className={styles.project_img}/>
                 <Modal>
                     <div className={showclass ? ModalStyles.main : ModalStyles['main-hide'] }></div>
                     <a className={showclass ? ModalStyles.btn : ModalStyles['main-hide']} href={url} target="_blank" rel="noopener noreferrer">Visita el sitio</a>

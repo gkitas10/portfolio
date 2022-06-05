@@ -11,6 +11,10 @@
     /*line-height eliminates weird whitespace below images*/
     line-height: 0;
 }
+/*Takes effect when 1224px +*/
+.project_img {
+    border-radius: 6px;
+}
 
 .info {
     display: flex;
@@ -72,5 +76,11 @@
 @media screen and (max-width:1223px) {
     .main {
         display: none;
+    }
+}
+
+@media screen and (min-width:1224px) {
+    .project {
+        width: 90%;
     }
 }
