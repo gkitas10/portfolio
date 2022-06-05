@@ -138,12 +138,6 @@ export const Giticon = () => {
     );
 }
  
-export const LinkedIn = () => {
-    return (
-            <img src='/linkedin3.png' className={styles.linkedinicon}/>
-    );
-}
-
 export const JgIcon = ({ themeclass }) => {
     let dark = themeclass === 'dark' ? true : '';
      
