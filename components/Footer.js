@@ -43,9 +43,11 @@ const Footer = ({ projectsDB }) => {
       </div>
       <div className={styles.logos_cont}>
         <div className={styles.jglogo_cont}>
+          <img src="linkedin3.png" />
+        </div>
+        <div className={styles.jglogo_cont}>
           <img src="jggris.svg" />
         </div>
-        <LinkedIn />
       </div>
       
     </footer>
