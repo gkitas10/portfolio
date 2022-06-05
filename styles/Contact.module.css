@@ -1,7 +1,6 @@
 .main {
     display: flex;
     justify-content: center;
-    background-color: rgba(115, 144, 249, .2);
     min-height: 85vh;
     padding-top: 4em;
 }
