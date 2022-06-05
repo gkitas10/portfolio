@@ -18,3 +18,9 @@
         display: none;
     }
 }
+
+@media screen and (min-width:1224px) {
+    .anchor {
+        font-size: 1.25rem;
+    }
+}
