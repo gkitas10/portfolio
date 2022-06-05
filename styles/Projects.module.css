@@ -19,6 +19,16 @@
     justify-items: center;
 }
 
+@media screen and (min-width:1224px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

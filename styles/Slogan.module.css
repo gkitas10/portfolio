@@ -12,3 +12,9 @@
     font-family: var(--contentfontfamily);
     color: var(--basicfontcolor);
 }
+
+@media screen and (min-width:1224px) {
+    .content {
+        font-size: 2.5rem;
+    }
+}
