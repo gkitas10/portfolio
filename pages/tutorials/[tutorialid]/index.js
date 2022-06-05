@@ -3,10 +3,8 @@ import Layout from "../../../components/Layout";
 import mongodbConnection from "../../../db/dbconnection";
 
 const TutorialsPage = ({ projectsDB }) => {
-    
     const router = useRouter();
     const id = router.query.tutorialid;
-    console.log(id);
     const project = projectsDB.filter((project) => project._id === id)[0];
 
     return (
@@ -41,9 +39,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps () {
-    // const response = await axiosClient.get('/api/projects')
-    // const projectsDB = response.data.response;
-    
     const { client, db } = await mongodbConnection();
     const projectsCollection = db.collection('projects');
     const response = await projectsCollection.find().toArray();

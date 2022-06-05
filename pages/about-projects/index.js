@@ -1,6 +1,5 @@
 import styles from "../../styles/AboutProjectsPage.module.css";
 import Slider from "../../components/Slider";
-import axiosClient from "../../axios/axios";
 import Layout from "../../components/Layout";
 import mongodbConnection from "../../db/dbconnection";
 
@@ -8,7 +7,7 @@ const AboutProjectsPage = ({ projectsDB }) => {
   
   return (
       <div className={styles.main}>
-        <Layout>
+        <Layout projectsDB={projectsDB}>
           {projectsDB.map((project, idx) => (
             <div className={styles.project} key={project._id}>
               <div className={styles.info}>
@@ -29,8 +28,6 @@ const AboutProjectsPage = ({ projectsDB }) => {
 export default AboutProjectsPage;
 
 export async function getStaticProps() {
-  // const response = await axiosClient.get("/api/projects");
-  // const projectsDB = response.data.response;
 
   const { client, db } = await mongodbConnection();
   const projectsCollection = db.collection('projects');
