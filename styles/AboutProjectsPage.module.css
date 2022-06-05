@@ -2,40 +2,38 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(115, 144, 249, .2);
-    padding: 6em 3em;
     min-height: 100vh;
 }
 
 .project {
     display: flex;
+    flex-direction: column;
     padding: 2em 2em;
     border-radius: 8px;
     margin-bottom: 2em;
+    padding: 0 5%;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    width: 40%;
 }
 
 .paragraph {
     font-family: var(--titlesfontfamily);
-    font-size: 1.2rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .imgs-section {
     display: flex;
     justify-content: center;
-    width: 60%;
     align-items: center;
 }
 
 .img-cont {
     display: flex;
     width: 70%;
-    
 }
 
 .img {
@@ -66,4 +64,11 @@
 .container {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width:1224px) {
+    .paragraph {
+        font-size: 1.2rem;
+        margin-bottom: 2em;
+    }
 }
