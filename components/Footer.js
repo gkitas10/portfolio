@@ -34,7 +34,7 @@ const Footer = ({ projectsDB }) => {
           onMouseEnter={isDesktop ? handleMouseEnter : null }
         >
           Tutoriales
-          <img src="dropdownarrow.png" className={styles.arrow} />
+          <img src="/dropdownarrow.png" className={styles.arrow} />
           { dropdown && (<DropdownMenu projectsDB={projectsDB} setDropdown={setDropdown} />)
            }
           
@@ -42,10 +42,10 @@ const Footer = ({ projectsDB }) => {
       </div>
       <div className={styles.logos_cont}>
         <div className={styles.jglogo_cont}>
-          <img src="linkedin3.png" />
+          <img src="/linkedin3.png" />
         </div>
         <div className={styles.jglogo_cont}>
-          <img src="jggris.svg" />
+          <img src="/jggris.svg" />
         </div>
       </div>
       

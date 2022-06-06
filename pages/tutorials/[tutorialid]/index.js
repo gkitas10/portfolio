@@ -1,4 +1,5 @@
 import {useRouter} from "next/router";
+import Footer from "../../../components/Footer";
 import Layout from "../../../components/Layout";
 import mongodbConnection from "../../../db/dbconnection";
 
@@ -9,7 +10,7 @@ const TutorialsPage = ({ projectsDB }) => {
 
     return (
         <div>
-            <Layout>
+            <Layout projectsDB={projectsDB}>
                 <img
                 src={'/' + project.imgsfolder + '/tutorial.png'}
                 />
