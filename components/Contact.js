@@ -40,7 +40,6 @@ const Contact = () => {
                     onChange={handleChange}
                 />
               </div>
-              
             </div>
             <div className={styles.form_group}>
               <div className={styles.label}>Correo</div>
@@ -66,7 +65,7 @@ const Contact = () => {
                 />
             </div>
             </div>
-            <div className={styles.form_group}>
+            <div className={styles.form_group+ ' ' + styles.btn_wrapper}>
               <input type="submit" value="Enviar" className={styles.input_submit}/>
             </div>
           </form>
