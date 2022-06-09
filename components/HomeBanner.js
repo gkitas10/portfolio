@@ -17,7 +17,7 @@ const HomeBanner = () => {
                 </div>
             </div>
             <div className={styles['img-cont']}>
-                <img src="./personalpic.png" className={styles.personal_pic}/>
+                <img src="./personalpic2.png" className={styles.personal_pic}/>
             </div>
         </div>
      );
