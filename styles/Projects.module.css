@@ -35,6 +35,13 @@
     }
 }
 
+@media screen and (min-width:1600px) {
+    .main {
+        width: 100%;
+        padding: 0 15%;
+    }
+}
+
 /* .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

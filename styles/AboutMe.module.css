@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 80vh;
 }
 
 .text_cont {
@@ -34,9 +35,17 @@
 @media screen and (min-width:1224px) {
     .text_cont {
         padding: 0 20%;
+        margin-bottom: 2em;
+        font-size: 1.2rem;
     }
 
     .icons_cont {
         width: 70%;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .icons_cont {
+        width: 75%;
     }
 }
