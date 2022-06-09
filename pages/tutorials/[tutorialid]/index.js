@@ -1,5 +1,6 @@
 import {useRouter} from "next/router";
 import Footer from "../../../components/Footer";
+import styles from '../../../styles/TutorialsPage.module.css';
 import Layout from "../../../components/Layout";
 import mongodbConnection from "../../../db/dbconnection";
 
@@ -11,9 +12,12 @@ const TutorialsPage = ({ projectsDB }) => {
     return (
         <div>
             <Layout projectsDB={projectsDB}>
-                <img
-                src={'/' + project.imgsfolder + '/tutorial.png'}
-                />
+                <div className={styles.img_cont}>
+                    <img
+                    className={styles.img}
+                    src={'/' + project.imgsfolder + '/tutorial.png'} 
+                    />
+                </div>
             </Layout>
         </div>
     );
