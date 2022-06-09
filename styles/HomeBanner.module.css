@@ -81,7 +81,20 @@
 .img-cont {
     margin: 0 auto;
 } 
+
+.personal_pic {
+    /* max-width: 640px; */
+    border-radius: 32px;
+}
 /* media queries  */
+
+@media only screen and (min-width: 1024px) {
+    .personal_pic {
+        max-width: 640px;
+       
+    }
+}
+
 @media only screen and (min-width: 1024px) {
     .homebanner__greeting {
         font-size: 2.5rem;
@@ -127,6 +140,13 @@
 
     .anchor {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .homebanner {
+        width: 100%;
+        padding: 0 15%;
     }
 }
 /* display: flex;

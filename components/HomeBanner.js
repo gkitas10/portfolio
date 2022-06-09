@@ -17,7 +17,7 @@ const HomeBanner = () => {
                 </div>
             </div>
             <div className={styles['img-cont']}>
-                <img src="https://assets.website-files.com/6218605145a2e6339ee94d62/6219e9a52501e60f3f97f944_home-two-men.png"/>
+                <img src="./personalpic.png" className={styles.personal_pic}/>
             </div>
         </div>
      );
