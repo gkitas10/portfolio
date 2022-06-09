@@ -70,6 +70,10 @@ const Contact = () => {
             </div>
           </form>
         </div>
+        <div className={styles.number_cont}>
+            <div className={styles.number}>9992979765</div>
+            <div className={styles.whatsappicon_cont}><img src="./whatsappicon.svg"/></div>
+        </div>
       </div>
   );
 };
