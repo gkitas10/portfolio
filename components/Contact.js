@@ -22,7 +22,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await axiosClient.post("/api/contact", email);
+    try {
+      await axiosClient.post("/api/contact", email);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
