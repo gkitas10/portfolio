@@ -12,7 +12,7 @@ const HomeBanner = () => {
                     </div>
                     <h1 className={styles.name}>Soy Jorge G. Cantón</h1>
                     <h1 className={styles.occupation}><span className={styles.span}>web</span> developer</h1>
-                    <p className={styles.email}>gkitas10@gmail.com</p>
+                    <p className={styles.email}>jgcanton89@gmail.com</p>
                     <Link href="/contact"><a className={styles.anchor}>Contáctame</a></Link>
                 </div>
             </div>
