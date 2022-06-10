@@ -42,7 +42,10 @@ const Footer = ({ projectsDB }) => {
       </div>
       <div className={styles.logos_cont}>
         <div className={styles.jglogo_cont}>
-          <img src="/linkedin3.png" />
+          <a href='https://www.linkedin.com/in/jorge-antonio-g-cant%C3%B3n-iuit-6366b2241/' target="_blank" rel="noopener noreferrer">
+            <img src="/linkedin3.png" />
+          </a>
+          
         </div>
         <div className={styles.jglogo_cont}>
           <img src="/jggris.svg" />

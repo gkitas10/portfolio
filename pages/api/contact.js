@@ -1,5 +1,5 @@
 export default async function Contact (req, res) {
-  require('dotenv').config()
+  // require('dotenv').config()
   
   let nodemailer = require('nodemailer')
 
@@ -22,7 +22,7 @@ export default async function Contact (req, res) {
       },
       auth: {
           user: 'portfolioburner@hotmail.com',
-          pass: 'burnerburner10'
+          pass: process.env.password
       }
   });
 
@@ -40,8 +40,6 @@ export default async function Contact (req, res) {
     } catch (error) {
       console.log('errr',error);
     }
-    
-    
 }
 
 
