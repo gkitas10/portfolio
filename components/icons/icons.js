@@ -138,9 +138,9 @@ export const Giticon = () => {
     );
 }
  
-export const JgIcon = () => {
+export const JgIcon = ({ home }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 171" className={styles.jgicon}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 171" className={ home ? styles.jgicon_home : styles.jgicon }>
             <g>
                 <g>
                     <path /* className="st0" */ d="M131.02,33.04c-11.34,1.31-12.51,2.18-12.51,14.4v53.81c0,19.2-3.05,29.23-12.8,37.96

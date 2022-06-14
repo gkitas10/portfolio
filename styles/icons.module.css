@@ -38,6 +38,13 @@
     fill: #242F65;
 }
 
+.jgicon_home {
+    min-width: 100px;
+    max-width: 100px;
+    fill: #242F65;
+    cursor:auto;
+}
+
 .jgicon:hover {
     fill: #ff774c;
     transition: 1s;
