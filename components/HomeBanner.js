@@ -7,7 +7,7 @@ const HomeBanner = ({}) => {
     const {locale} = useRouter();
     const {homebanner} = home[locale];
     const { greeting, iam, contactme } = homebanner;
-    console.log(locale);
+    
     return ( 
         <div className={styles.homebanner}>
             <div className={styles.info}>
