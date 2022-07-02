@@ -50,7 +50,7 @@ const Footer = ({ projectsDB }) => {
            }
           
         </div>
-        <select onChange={handleChange} defaultValue='es'>
+        <select onChange={handleChange} defaultValue={locale}>
           <option value='en'>English</option>
           <option value='es'>Español</option>
         </select>

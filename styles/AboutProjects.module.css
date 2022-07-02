@@ -1,0 +1,25 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    padding: 0 5%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph {
+    font-family: var(--titlesfontfamily);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.imgs-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

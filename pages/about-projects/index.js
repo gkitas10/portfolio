@@ -2,22 +2,23 @@ import styles from "../../styles/AboutProjectsPage.module.css";
 import Slider from "../../components/Slider";
 import Layout from "../../components/Layout";
 import mongodbConnection from "../../db/dbconnection";
+import AboutProjectsProject from "../../components/AboutProjectsProject";
 
 const AboutProjectsPage = ({ projectsDB }) => {
-  
   return (
       <div className={styles.main}>
         <Layout projectsDB={projectsDB}>
-          {projectsDB.map((project, idx) => (
-            <div className={styles.project} key={project._id}>
-              <div className={styles.info}>
-                <h2>{project.name}</h2>
-                <p className={styles.paragraph}>{project.description}</p>
-              </div>
-              <div className={styles["imgs-section"]}>
-                <Slider project={projectsDB[idx]} />
-              </div>
-            </div>
+          {projectsDB?.map((project, idx) => (
+             <AboutProjectsProject project={project} projectsDB={projectsDB} key={project._id} idx={idx}/>
+            // <div className={styles.project} key={project._id}>
+            //   <div className={styles.info}>
+            //     <h2>{project.name}</h2>
+            //     <p className={styles.paragraph}>{project.description}</p>
+            //   </div>
+            //   <div className={styles["imgs-section"]}>
+            //     <Slider project={projectsDB[idx]} />
+            //   </div>
+            // </div>
           ))}
         </Layout>
       </div>
@@ -39,9 +40,11 @@ export async function getStaticProps() {
     }
 })
 
+client.close();
+
   return {
     props: {
-      projectsDB,
+      projectsDB
     },
   };
 }

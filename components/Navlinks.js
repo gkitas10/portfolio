@@ -9,9 +9,9 @@ const Navlinks = () => {
     const { aboutprojects, aboutme, contact } = header?.navlinks;
     return (
         <ul className={styles.main}>
-            <Link href='/about-projects'><a className={styles.anchor}>{aboutprojects}</a></Link> 
-            <Link href='/aboutme'><a className={styles.anchor}>{aboutme}</a></Link>
-            <Link href='/contact'><a className={styles.anchor}>{contact}</a></Link>
+            <Link href='/about-projects' locale={locale}><a className={styles.anchor}>{aboutprojects}</a></Link> 
+            <Link href='/aboutme' locale={locale}><a className={styles.anchor}>{aboutme}</a></Link>
+            <Link href='/contact' locale={locale}><a className={styles.anchor}>{contact}</a></Link>
         </ul>
     );
 }

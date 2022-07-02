@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import styles from '../styles/Slider.module.css';
+import { useRouter } from 'next/router';
 
 const Slider = ({ project }) => {
+    const router = useRouter();
+    console.log(router);
     const { name, sliderimgs, imgsfolder } = project; 
     const [ index, setIndex ] = useState(0);
 
@@ -11,7 +14,7 @@ const Slider = ({ project }) => {
             style={{ transform: `translate(${-index * 100}%)`}}
             >
                 { sliderimgs?.map((imgname, idx) => (
-                    <img src={imgsfolder+ '/' + imgname} key={idx} className={styles.image}/>
+                    <img src={'/' + imgsfolder+ '/' + imgname} key={idx} className={styles.image}/>
                 ))}
                 
             </div>

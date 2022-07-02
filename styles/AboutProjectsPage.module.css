@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-.img-cont {
+/* .img-cont {
     display: flex;
     width: 70%;
 }
@@ -64,7 +64,7 @@
 .container {
     display: flex;
     justify-content: center;
-}
+} */
 
 @media screen and (min-width:1224px) {
     .paragraph {
